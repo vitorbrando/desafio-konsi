@@ -36,4 +36,6 @@ paths:
               senha: testekonsi
       responses:
         "200":
-          description: "Sucesso ao consultar benefício"
+          description: "Sucesso ao buscar informação"
+        "400":
+          description: "Falha ao buscar informação"
