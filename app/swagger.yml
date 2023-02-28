@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: "Desafio Konsi"
+  description: "API para desafio do processo seletivo da Konsi"
+  version: "1.0.0"
+
+servers:
+  - url: "/api"
+
+components:
+  schemas:
+    Consulta:
+      properties:
+        cpf:
+          type: string
+        usuario:
+          type: string
+        senha:
+          type: string
+
+paths:
+  /beneficio:
+    post:
+      operationId: "app.api.beneficio.consulta_cpf"
+      summary: "Retorna código de benefício a partir de um CPF"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              x-body-name: "consulta"
+              $ref: '#/components/schemas/Consulta'
+            example:
+              cpf: 810.693.915-49
+              usuario: testekonsi
+              senha: testekonsi
+      responses:
+        "200":
+          description: "Sucesso ao consultar benefício"
