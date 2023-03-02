@@ -32,16 +32,6 @@ Instruções em:
 
     https://pip.pypa.io/en/stable/installation/
 
-## Virtualenv 
-
-### Ubuntu
-
-    $ sudo apt install python3-virtualenv
-
-### Windows e MacOS
-
-    pip install virtualenv
-
 ## Chrome
 
 Download do instalador: 
@@ -63,8 +53,7 @@ Baixar o Driver correto da versão e SO em:
 
     https://chromedriver.chromium.org/downloads
 
-Descompactar e mover o executável 'chromedriver' para uma pasta onde o python possa encontrá-lo. 
-Ex.: No Linux copiar para a pasta bin do env, e no Windows copiar para a pasta Scripts do env.
+Descompactar e mover o executável 'chromedriver' para uma pasta onde o python possa encontrá-lo (ex.: pasta bin do virtualenv)
 
 ### Exemplo Ubuntu
     cd ~/Downloads
@@ -80,14 +69,21 @@ Ex.: No Linux copiar para a pasta bin do env, e no Windows copiar para a pasta S
 
 ### Criar ambiente virtual dentro da pasta do projeto
 
-    $ pip install virtualenv
     $ python -m venv env
 
 ### Ativar ambiente virtual
 
-    $ source env/bin/activate (Linux ou MacOS)
+### Ubuntu e MacOS
 
-    $ env/Scripts/Activate (Windows)
+    $ source env/bin/activate
+
+### Windows
+
+    $ .\env\Scripts\Activate
+
+Obs.: Caso o Windows bloqueie esta operação, liberar no console com usuário administrativo.
+
+    set-executionpolicy remotesigned
 
 ### Instalar bibliotecas
 
