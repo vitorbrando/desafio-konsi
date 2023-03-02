@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "d4689f28-6648-4686-8f90-48b9a8314d7f",
+		"name": "Konsi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5542124"
+	},
+	"item": [
+		{
+			"name": "Consulta Matrícula",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cpf\": \"927.100.938-04\",\n    \"usuario\": \"testekonsi\",\n    \"senha\": \"testekonsi\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://desafio-konsi.brando.dev.br/api/matricula",
+					"protocol": "http",
+					"host": [
+						"desafio-konsi",
+						"brando",
+						"dev",
+						"br"
+					],
+					"path": [
+						"api",
+						"matricula"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

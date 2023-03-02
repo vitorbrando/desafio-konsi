@@ -126,3 +126,6 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
     http://desafio-konsi.brando.dev.br/api/ui/
 
 
+    Projeto do Postman para testes:
+
+    https://github.com/vitorbrando/desafio-konsi/blob/main/Konsi.postman_collection.json
