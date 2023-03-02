@@ -125,7 +125,7 @@ Descompactar e mover o executável 'chromedriver' para uma pasta onde o python p
 
 # Testes
 
-Após ativar o ambiente virtal, navegar até a pasta 'app' e executar:
+Após ativar o ambiente virtal, navegar até a pasta do projeto e executar:
 
     py.test
 
