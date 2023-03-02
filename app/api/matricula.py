@@ -5,7 +5,7 @@ import requests, json
 
 tokens_cache = {}
 
-def consulta_cpf(consulta):
+def consulta_matricula_cpf(consulta):
     global tokens_cache
     cpf = consulta['cpf']
     usuario = consulta['usuario']

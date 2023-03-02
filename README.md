@@ -72,9 +72,14 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
     $ pip install virtualenv
     $ virtualenv env
 
+### Ativar ambiente virtual
+
+    $ source env/bin/activate (Linux ou MacOS)
+
+    $ env/Scripts/Activate (Windows)
+
 ### Instalar bibliotecas
 
-    $ source env/bin/activate
     $ pip install -r requirements.txt
 
 ### Executar projeto
@@ -95,7 +100,7 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
 </tr>
 <tr>
     <td>POST</td>
-    <td>​/beneficio</td>
+    <td>​/api/beneficio</td>
     <td>Retorna código de benefício a partir de um CPF</td>
 </tr>
 </table>
@@ -107,3 +112,17 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
         "senha": "testekonsi",
         "usuario": "testekonsi"
     }
+
+# Testes
+
+    Após ativar o ambiente virtal, navegar até a pasta 'app' e executar:
+
+    py.test
+
+# Projeto em execução disponível 
+
+    Disponibilizei uma versão do projeto já em execução.
+
+    http://desafio-konsi.brando.dev.br/api/ui/
+
+

@@ -19,9 +19,9 @@ components:
           type: string
 
 paths:
-  /beneficio:
+  /matricula:
     post:
-      operationId: "app.api.beneficio.consulta_cpf"
+      operationId: "app.api.matricula.consulta_matricula_cpf"
       summary: "Retorna código de benefício a partir de um CPF"
       requestBody:
         required: true
