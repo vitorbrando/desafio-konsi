@@ -15,7 +15,9 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
 
 ### Windows e MacOS
 
-    Download do instalador: https://www.python.org/downloads/release/python-31010/
+Download do instalador: 
+
+    https://www.python.org/downloads/release/python-31010/
 
 ## Pip 
 
@@ -26,7 +28,9 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
 
 ### Windows e MacOS
 
-    Instruções em: https://pip.pypa.io/en/stable/installation/
+Instruções em: 
+
+    https://pip.pypa.io/en/stable/installation/
 
 ## Virtualenv 
 
@@ -40,7 +44,9 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
 
 ## Chrome
 
-    Download do instalador: https://www.google.com/chrome/
+Download do instalador: 
+
+    https://www.google.com/chrome/
 
 ### Ubuntu
 
@@ -49,11 +55,15 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
 
 ## Chrome Driver 
 
-    Verificar a versão do Crhome digitando na barra de navegação: chrome://settings/help
+Verificar a versão do Crhome digitando na barra de navegação: 
 
-    Baixar o Driver correto da versão e SO em: https://chromedriver.chromium.org/downloads
+    chrome://settings/help
 
-    Descompactar e mover o executável 'chromedriver' para uma pasta onde o python possa encontrá-lo (ex.: pasta bin do virtualenv)
+Baixar o Driver correto da versão e SO em: 
+
+    https://chromedriver.chromium.org/downloads
+
+Descompactar e mover o executável 'chromedriver' para uma pasta onde o python possa encontrá-lo (ex.: pasta bin do virtualenv)
 
 ### Exemplo Ubuntu
     cd ~/Downloads
@@ -115,17 +125,17 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
 
 # Testes
 
-    Após ativar o ambiente virtal, navegar até a pasta 'app' e executar:
+Após ativar o ambiente virtal, navegar até a pasta 'app' e executar:
 
     py.test
 
 # Projeto em execução disponível 
 
-    Disponibilizei uma versão do projeto já em execução.
+Disponibilizei uma versão do projeto já em execução.
 
     http://desafio-konsi.brando.dev.br/api/ui/
 
 
-    Projeto do Postman para testes:
+Projeto do Postman para testes:
 
     https://github.com/vitorbrando/desafio-konsi/blob/main/Konsi.postman_collection.json
