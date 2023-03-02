@@ -63,7 +63,8 @@ Baixar o Driver correto da versão e SO em:
 
     https://chromedriver.chromium.org/downloads
 
-Descompactar e mover o executável 'chromedriver' para uma pasta onde o python possa encontrá-lo (ex.: pasta bin do virtualenv)
+Descompactar e mover o executável 'chromedriver' para uma pasta onde o python possa encontrá-lo. 
+Ex.: No Linux copiar para a pasta bin do env, e no Windows copiar para a pasta Scripts do env.
 
 ### Exemplo Ubuntu
     cd ~/Downloads
@@ -80,7 +81,7 @@ Descompactar e mover o executável 'chromedriver' para uma pasta onde o python p
 ### Criar ambiente virtual dentro da pasta do projeto
 
     $ pip install virtualenv
-    $ virtualenv env
+    $ python -m venv env
 
 ### Ativar ambiente virtual
 
