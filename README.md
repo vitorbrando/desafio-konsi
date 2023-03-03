@@ -116,8 +116,8 @@ Obs.: Caso o Windows bloqueie esta operação, liberar no console com usuário a
 
     {
         "cpf": "810.693.915-49",
-        "senha": "testekonsi",
         "usuario": "testekonsi"
+        "senha": "testekonsi",  
     }
 
 # Testes
