@@ -6,92 +6,17 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
 
 # Pré-requisitos
 
-## Python 
+## Docker 
 
-### Ubuntu
+### Instalação
 
-    $ sudo apt update -y
-    $ sudo apt install python3
+    https://docs.docker.com/engine/install/
 
-### Windows e MacOS
-
-Download do instalador: 
-
-    https://www.python.org/downloads/release/python-31010/
-
-## Pip 
-
-### Ubuntu
-
-    $ sudo apt update -y
-    $ sudo apt python3-pip
-
-### Windows e MacOS
-
-Instruções em: 
-
-    https://pip.pypa.io/en/stable/installation/
-
-## Chrome
-
-Download do instalador: 
-
-    https://www.google.com/chrome/
-
-### Ubuntu
-
-    $ sudo dpkg -i google-chrome-stable_current_amd64.deb
-
-
-## Chrome Driver 
-
-Verificar a versão do Crhome digitando na barra de navegação: 
-
-    chrome://settings/help
-
-Baixar o Driver correto da versão e SO em: 
-
-    https://chromedriver.chromium.org/downloads
-
-Descompactar e mover o executável 'chromedriver' para uma pasta onde o python possa encontrá-lo (ex.: pasta bin do virtualenv)
-
-### Exemplo Ubuntu
-    cd ~/Downloads
-    unzip chromedriver_linux64.zip
-    sudo mv chromedriver ~/desafio-konsi/env/bin
-
-# Instruções para execução do projeto
+# Instruções para execução do projeto (local)
 
 ### Clonar projeto a partir do Github
 
-    $ git clone https://github.com/vitorbrando/desafio-konsi.git
-    cd desafio-konsi
-
-### Criar ambiente virtual dentro da pasta do projeto
-
-    $ python -m venv env
-
-### Ativar ambiente virtual
-
-### Ubuntu e MacOS
-
-    $ source env/bin/activate
-
-### Windows
-
-    $ .\env\Scripts\Activate
-
-Obs.: Caso o Windows bloqueie esta operação, liberar no console com usuário administrativo.
-
-    set-executionpolicy remotesigned
-
-### Instalar bibliotecas
-
-    $ pip install -r requirements.txt
-
-### Executar projeto
-
-    $ python main.py
+    $ docker run --name desafiokonsi -p 8000:8000 -d vitorbrando/dev:desafiokonsi
 
 ### Acessar através do browser a interface do Swagger para testes
 
@@ -122,13 +47,17 @@ Obs.: Caso o Windows bloqueie esta operação, liberar no console com usuário a
 
 # Testes
 
-Após ativar o ambiente virtal, navegar até a pasta do projeto e executar:
+Conectar ao container que está executando o projeto.
+
+    docker exec -i -t desafiokonsi /bin/sh
+
+Executar os testes.
 
     py.test
 
 # Projeto em execução disponível 
 
-Disponibilizei uma versão do projeto já em execução.
+Disponibilizei uma versão do projeto já em execução no endereço.
 
     http://desafio-konsi.brando.dev.br/api/ui/
 
