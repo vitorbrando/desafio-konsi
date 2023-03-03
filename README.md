@@ -32,8 +32,8 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
 </tr>
 <tr>
     <td>POST</td>
-    <td>​/api/beneficio</td>
-    <td>Retorna código de benefício a partir de um CPF</td>
+    <td>​/api/matricula</td>
+    <td>Retorna código de matrícula a partir de um CPF</td>
 </tr>
 </table>
 
