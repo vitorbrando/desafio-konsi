@@ -20,7 +20,7 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
 
 ### Acessar através do browser a interface do Swagger para testes
 
-    $ http://localhost:8000/api/ui/
+    http://localhost:8000/api/ui/
 
 # API
 
