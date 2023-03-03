@@ -14,7 +14,7 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
 
 # Instruções para execução do projeto (local)
 
-### Clonar projeto a partir do Github
+### Executar projeto a partir de imagem do Dockerhub
 
     docker run --name desafiokonsi -p 8000:8000 -d vitorbrando/dev:desafiokonsi
 
