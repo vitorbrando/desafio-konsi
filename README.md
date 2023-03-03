@@ -16,7 +16,7 @@ Projeto com solução para desafio proposto durante processo seletivo da Konsi.
 
 ### Clonar projeto a partir do Github
 
-    $ docker run --name desafiokonsi -p 8000:8000 -d vitorbrando/dev:desafiokonsi
+    docker run --name desafiokonsi -p 8000:8000 -d vitorbrando/dev:desafiokonsi
 
 ### Acessar através do browser a interface do Swagger para testes
 
