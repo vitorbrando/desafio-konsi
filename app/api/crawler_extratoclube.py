@@ -8,6 +8,9 @@ from selenium.webdriver.support import expected_conditions as EC
 def get_auth_token(usuario, senha):
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
+    options.add_argument('--no-sandbox')
+    options.add_argument("--disable-setuid-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
     driver = webdriver.Chrome(chrome_options=options)
     driver.get("{}{}".format("http://", URL_TOKEN_LOGIN))
 
